@@ -2,10 +2,11 @@ import sounddevice as sd
 import scipy.signal as signal
 import numpy as np
 
-#Nuevo comentario
+#Definición de parametros para grabar la voz
 frecuencia_muestreo = 44100
 duracion = 5
 
+#Grabar la voz
 print("Grabando...")
 entrada_audio = sd.rec(int(duracion * frecuencia_muestreo), samplerate = frecuencia_muestreo, channels = 1, dtype = np.float32)
 sd.wait()

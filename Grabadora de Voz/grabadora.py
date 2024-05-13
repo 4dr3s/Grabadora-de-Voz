@@ -2,6 +2,7 @@ import sounddevice as sd
 import scipy.signal as signal
 import numpy as np
 
+#Nuevo comentario
 frecuencia_muestreo = 44100
 duracion = 5
 
